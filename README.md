@@ -15,8 +15,8 @@ Requires .NET Framework 4.0.
 	<summary>
 		<i>(click this to show images)</i> Start by changing values in csproj properties and AssemblyInfo.
 	</summary>
-	<img src="docs/1.png" style="max-width: 75vw;">
-	<img src="docs/2.png" style="max-width: 75vw;">x
+	<img src="https://github.com/GabrielF-C/MusicBeePluginTemplate/blob/main/docs/1.PNG" style="max-width: 75vw;">
+	<img src="https://github.com/GabrielF-C/MusicBeePluginTemplate/blob/main/docs/2.PNG" style="max-width: 75vw;">
 </details>
 
 Then modify `MusicBeePlugin.Plugin` to do what you want.
