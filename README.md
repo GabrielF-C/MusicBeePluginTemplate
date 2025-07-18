@@ -5,7 +5,7 @@ A clean template to get you started making your own MusicBee plugin. Tested with
 ## How to use the template
 
 > [!CAUTION]
-> The name of the DLL must start with `mb__`.
+> The name of the DLL must start with `mb_`.
 
 <details>
 	<summary>
