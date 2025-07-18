@@ -75,6 +75,14 @@ namespace MusicBeeApi.PluginTypes
             observers.Add(observer);
         }
 
+        protected void Unsubscribe(NotificationType type, NotificationObserver observer)
+        {
+            if (NotificationObservers.ContainsKey(type));
+            {
+                NotificationObservers.Where(x => x.Key == type).Single().Value.Remove(observer);
+            }
+        }
+
         private void NotifyAll(string sourceFileUrl, NotificationType type)
         {
             foreach (var observer in NotificationObservers.Values.SelectMany(x => x))
