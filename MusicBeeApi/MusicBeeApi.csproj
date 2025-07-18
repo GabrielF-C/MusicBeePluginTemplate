@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>8.0</LangVersion>
@@ -6,11 +6,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{F5D46BA1-6F21-40EF-9695-46105CCACD08}</ProjectGuid>
+    <ProjectGuid>{697CCB97-7AF6-4AB4-B4C6-BC730241EAC9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MusicBeePlugin</RootNamespace>
-    <AssemblyName>mb_MyPluginDLL</AssemblyName>
+    <RootNamespace>MusicBeeApi</RootNamespace>
+    <AssemblyName>MusicBeeApi</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>
@@ -37,7 +37,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -78,16 +78,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="src\MusicBeeApi\PluginTypes\BasePlugin\BasePlugin.cs" />
-    <Compile Include="src\MusicBeeApi\PluginTypes\BasePlugin\BasePlugin.Required.cs" />
-    <Compile Include="src\MusicBeeApi\PluginTypes\BasePlugin\BasePlugin.Overridable.cs" />
-    <Compile Include="src\MusicBeeApi\Delegates.cs" />
-    <Compile Include="src\MusicBeeApi\Enums.cs" />
-    <Compile Include="src\MusicBeeApi\PluginTypes\BasePlugin\BasePlugin.MusicBeeApiInterface.cs" />
-    <Compile Include="src\MusicBeeApi\PluginTypes\DockablePanelPlugin.cs" />
-    <Compile Include="src\MusicBeeApi\PluginInfo.cs" />
-    <Compile Include="src\MusicBeeApi\PluginTypes\DockablePanelWithMenuItemsPlugin.cs" />
-    <Compile Include="src\MusicBeePlugin\Plugin.cs" />
+    <Compile Include="Delegates.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="PluginInfo.cs" />
+    <Compile Include="PluginTypes\BasePlugin\BasePlugin.cs" />
+    <Compile Include="PluginTypes\BasePlugin\BasePlugin.MusicBeeApiInterface.cs" />
+    <Compile Include="PluginTypes\BasePlugin\BasePlugin.Overridable.cs" />
+    <Compile Include="PluginTypes\BasePlugin\BasePlugin.Required.cs" />
+    <Compile Include="PluginTypes\DockablePanelPlugin.cs" />
+    <Compile Include="PluginTypes\DockablePanelWithMenuItemsPlugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -113,11 +112,4 @@
     </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
 </Project>
