@@ -19,7 +19,7 @@ Requires .NET Framework 4.0.
 	<img src="https://github.com/GabrielF-C/MusicBeePluginTemplate/blob/main/docs/2.PNG" style="max-width: 75vw;">
 </details>
 
-Then modify `MusicBeePlugin.Plugin` to do what you want.
+Then modify the `MusicBeePlugin.Plugin` class to do what you want.
 
 ## How this template works
 
@@ -29,9 +29,9 @@ Use the Api field to interact with MusicBee's API.
 
 ## How to install a plugin
 
-Essentially, just drop your DLL into `%APPDATA%/MusicBee/Plugins/`.
+Just drop your plugin DLL (and _MusicBeeApi.dll_) into `%APPDATA%/MusicBee/Plugins/`.
 
-Or you can install using MusicBee's UI by going into the menu `MusicBee > Edit > Edit Preferences > Plugins`.
+Check if it is installed correctly by using MusicBee's UI in the menu `MusicBee > Edit > Edit Preferences > Plugins`.
 
 ## How to debug a plugin
 
