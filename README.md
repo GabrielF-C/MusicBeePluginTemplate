@@ -8,6 +8,19 @@ Requires .NET Framework 4.0.
 
 ## How to use the template
 
+### 1- Clone the template
+
+Open a terminal and type the following commands :
+
+```
+git clone https://github.com/GabrielF-C/MusicBeePluginTemplate
+cd ./MusicBeePluginTemplate/MusicBeeApi
+git submodule init
+git submodule update
+```
+
+### 2- Start writing your plugin
+
 > [!CAUTION]
 > The name of the DLL must start with `mb_`.
 
@@ -20,18 +33,19 @@ Requires .NET Framework 4.0.
 </details>
 
 Then modify the `MusicBeePlugin.Plugin` class to do what you want.
-
-## How this template works
-
 Subscribe to events using the observer pattern in the PluginStartup method.
-
 Use the Api field to interact with MusicBee's API.
 
 ## How to install a plugin
 
+Make sure MusicBee is not running.
+
 Just drop your plugin DLL (and _MusicBeeApi.dll_) into `%APPDATA%/MusicBee/Plugins/`.
 
-Check if it is installed correctly by using MusicBee's UI in the menu `MusicBee > Edit > Edit Preferences > Plugins`.
+Check if it installed correctly by using MusicBee's UI in the menu `MusicBee > Edit > Edit Preferences > Plugins`.
+By default, this plugin template should hit the pause button automatically after you press play.
+
+To uninstall, close MusicBee and delete the DLLs.
 
 ## How to debug a plugin
 
