@@ -104,7 +104,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MusicBeeApi\MusicBeeApi.csproj">
+    <ProjectReference Include="..\MusicBeeApi\MusicBeeApi\MusicBeeApi.csproj">
       <Project>{697CCB97-7AF6-4AB4-B4C6-BC730241EAC9}</Project>
       <Name>MusicBeeApi</Name>
     </ProjectReference>

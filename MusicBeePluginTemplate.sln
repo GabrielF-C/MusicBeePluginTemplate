@@ -15,7 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{96ECD588-E
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicBeeApi", "MusicBeeApi\MusicBeeApi.csproj", "{697CCB97-7AF6-4AB4-B4C6-BC730241EAC9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicBeeApi", "MusicBeeApi\MusicBeeApi\MusicBeeApi.csproj", "{697CCB97-7AF6-4AB4-B4C6-BC730241EAC9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicBeePlugin", "MusicBeePlugin\MusicBeePlugin.csproj", "{F5D46BA1-6F21-40EF-9695-46105CCACD08}"
 EndProject
